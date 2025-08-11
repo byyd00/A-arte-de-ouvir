@@ -1,0 +1,56 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(135deg, #f8cdda, #1d2b64);
+}
+
+#container > div {
+    position: relative;
+    display: inline-block;
+}
+
+.cxMaior {
+    width: 300px;
+    height: auto;
+    display: block;
+    border: 30px pink;
+}
+
+.botoes-vertical {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    z-index: 2;
+}
+
+.botao1,
+.botao2,
+.botao3,
+.botao4 {
+    width: 100%;
+    height: 55px;
+    font-size: 1.2em;
+    border-radius: 8px;
+    border: none;
+    background: transparent;
+    opacity: 0.7;
+    cursor: pointer;
+    position: static;
+    transition: background 0.3s, border-color 0.3s, transform 0.2s;
+}
+
+.botao1:hover,
+.botao2:hover,
+.botao3:hover,
+.botao4:hover {
+    /* Nenhuma alteração visual */
+}

@@ -1,0 +1,72 @@
+/* Fonte moderna */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #f8cdda, #1d2b64);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  color: #333;
+}
+
+.resultado-container {
+  background: #ffffff;
+  padding: 40px 50px;
+  border-radius: 20px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  max-width: 500px;
+  animation: aparecer 0.7s ease-out;
+}
+
+@keyframes aparecer {
+  from { transform: translateY(-20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+h1 {
+  color: #4a148c;
+  font-size: 2.2em;
+  margin-bottom: 20px;
+}
+
+.pontuacao-box {
+  background: linear-gradient(to right, #fbc2eb, #a6c1ee);
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 20px;
+  font-size: 1.5em;
+  color: #2d2d2d;
+  font-weight: 600;
+}
+
+.mensagem {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+  color: #555;
+}
+
+.botoes {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.botao {
+  background: linear-gradient(45deg, #7b2ff7, #f107a3);
+  color: white;
+  padding: 12px 28px;
+  border: none;
+  border-radius: 30px;
+  font-size: 1em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.botao:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(241, 7, 163, 0.5);
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Resultado do Quiz</title>
+  <link rel="stylesheet" href="./CSS/resultado.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="resultado-container">
+    <h1>🎉 Parabéns pelo seu progresso! 🎉</h1>
+    <div class="pontuacao-box">
+      <p>Você fez <span id="pontuacao-final"></span> pontos!</p>
+    </div>
+    <p id="mensagem-final" class="mensagem"></p>
+
+    <div class="botoes">
+      <button class="botao" onclick="refazerQuiz()">🔁 Refazer Quiz</button>
+      <button class="botao" onclick="voltarInicio()">🏠 Voltar ao Início</button>
+      <!-- Botão para ir para a página de agradecimento -->
+      <button class="botao" onclick="irParaAgradecimento()">🙏 Agradecimento</button>
+    </div>
+  </div>
+
+  <script>
+    const pontuacao = parseInt(localStorage.getItem('pontuacaoFase1')) || 0;
+    document.getElementById('pontuacao-final').innerText = pontuacao;
+
+    const mensagem = document.getElementById('mensagem-final');
+
+    if (pontuacao >= 25) {
+      mensagem.innerText = "🌟 Excelente! Você realmente domina o assunto!";
+    } else if (pontuacao >= 15) {
+      mensagem.innerText = "👍 Muito bem! Você está no caminho certo.";
+    } else if (pontuacao >= 5) {
+      mensagem.innerText = "😐 Você pode melhorar! Que tal tentar novamente?";
+    } else {
+      mensagem.innerText = "😞 Parece que você precisa ouvir com mais atenção!";
+    }
+
+    function refazerQuiz() {
+      localStorage.setItem('pontuacaoFase1', 0);
+      window.location.href = 'P1F2.html';
+    }
+
+    function voltarInicio() {
+      localStorage.setItem('pontuacaoFase1', 0);
+      window.location.href = 'index.html';
+    }
+
+    function irParaAgradecimento() {
+      localStorage.setItem('pontuacaoFase1', 0);
+      window.location.href = 'agradecimento.html'; // nome da página de agradecimento
+    }
+  </script>
+</body>
+</html>

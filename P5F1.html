@@ -1,0 +1,43 @@
+<!-- Exemplo para P3F1.html -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz - A arte de ouvir</title>
+    <link rel="stylesheet" type="text/css" href="./CSS/stylePerguntas.css"/>
+</head>
+<body>
+    <div id="container">
+        <div style="position: relative; display: inline-block;">
+            <img src="./IMG/1.5.png" alt="Perguntas" class="cxMaior">
+            <div
+                id="cronometro"
+                style="
+                    position: absolute;
+                    top: 10px;
+                    right: 10px;
+                    background:#250646;
+                    color: white;
+                    font-size: 18px;
+                    font-family: monospace;
+                    padding: 4px 10px;
+                    border-radius: 8px;
+                    z-index: 10;
+                    display: none;
+                "
+            ></div>
+            <div class="botoes-vertical">
+                <button class="botao1" data-pontos="3"></button>
+                <button class="botao2" data-pontos="2"></button>
+                <button class="botao3" data-pontos="0"></button>
+                <button class="botao4" data-pontos="1"></button>
+            </div>
+        </div>
+    </div>
+    <script src="./JS/fASE1.js"></script>
+    <script>
+        iniciarCronometro();
+    </script>
+</body>
+</html>

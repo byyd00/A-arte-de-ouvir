@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* organiza verticalmente */
+   background: linear-gradient(135deg, #f8cdda, #1d2b64);
+}
+
+.container {
+    position: relative;
+    display: inline-block; /* só ocupa o tamanho da imagem */
+}
+
+.cxMaior {
+    width: 300px; /* ou o tamanho que preferir */
+    height: auto;
+    display: block;
+    border: 30px pink;
+}
+
+.botao1 {
+    position: absolute;
+    top: 430px;          /* centraliza verticalmente */
+    left: 768px;         /* centraliza horizontalmente */
+    transform: translate(-50%, -50%); /* ajusta para o centro exato */
+    padding: 25px 132px;
+    background-color: #ff69b4;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.botao1:hover {
+    background-color: #ff1493;
+    transform: translate(-50%, -50%) scale(1.05);
+}
+.botao2 {
+    position: absolute;
+    top: 495px;          /* centraliza verticalmente */
+    left: 768px;         /* centraliza horizontalmente */
+    transform: translate(-50%, -50%); /* ajusta para o centro exato */
+    padding: 25px 132px;
+    background-color: #ff69b4;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.botao2:hover {
+    background-color: #ff1493;
+    transform: translate(-50%, -50%) scale(1.05);
+}
+.botao3 {
+    position: absolute;
+    top: 557px;          /* centraliza verticalmente */
+    left: 768px;         /* centraliza horizontalmente */
+    transform: translate(-50%, -50%); /* ajusta para o centro exato */
+    padding: 25px 132px;
+    background-color: #ff69b4;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.botao3:hover {
+    background-color: #ff1493;
+    transform: translate(-50%, -50%) scale(1.05);
+}
+.botao4 {
+    position: absolute;
+    top: 620px;          /* centraliza verticalmente */
+    left: 768px;         /* centraliza horizontalmente */
+    transform: translate(-50%, -50%); /* ajusta para o centro exato */
+    padding: 25px 132px;
+    background-color: #ff69b4;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.botao4:hover {
+    background-color: #ff1493;
+    transform: translate(-50%, -50%) scale(1.05);
+}

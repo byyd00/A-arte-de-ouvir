@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* organiza verticalmente */
+    background-color: #fefefe;
+}
+
+.container {
+    position: relative;
+    display: inline-block; /* só ocupa o tamanho da imagem */
+}
+
+.cxMaior {
+    width: 300px; /* ou o tamanho que preferir */
+    height: auto;
+    display: block;
+    border: 30px pink;
+    border-radius: 20px;
+}
+
+.botao1 {
+    position: absolute;
+    top: 585px;          /* centraliza verticalmente */
+    left: 768px;         /* centraliza horizontalmente */
+    transform: translate(-50%, -50%); /* ajusta para o centro exato */
+    padding: 30px 30px;
+    background-color: #ff69b400;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.botao1:hover {
+    background-color: hsla(265, 90%, 19%, 0.462);
+    transform: translate(-50%, -50%) scale(1.05);
+}
