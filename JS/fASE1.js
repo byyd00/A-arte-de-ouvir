@@ -67,7 +67,7 @@ function irParaProximaPergunta() {
 
     // Redireciona para resultado se for a última pergunta
     if (numeroAtual >= 10) {
-      window.location.href = "resultadof1.html";
+      window.location.href = "resultadoF1.html";
     } else {
       window.location.href = proximaURL;
     }
@@ -75,5 +75,14 @@ function irParaProximaPergunta() {
     // Se não reconhecer a URL, manda pro resultado
     window.location.href = "resultadof1.html";
   }
+}
+ if (numeroAtual >= 10) {
+  // Antes de ir para o resultado, copia a pontuação para resultadoF1
+  const pontuacaoFinal = parseInt(localStorage.getItem("pontuacaoFase1")) || 0;
+  localStorage.setItem("resultadoF1", pontuacaoFinal);
+  
+  window.location.href = "resultadoF1.html";
+} else {
+  window.location.href = proximaURL;
 }
 
